@@ -1,0 +1,239 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* border: 1px solid red; */
+}
+
+:root {
+    --main-color: #17A095;
+}
+
+
+.heading {
+    width: 40%;
+    /* height: 300vh; */
+    background-color: var(--main-color);
+    display: flex;
+    flex-direction: column;
+
+}
+
+.perfil-img {
+    margin-top: 2rem;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    margin: 2rem auto;
+}
+
+body {
+
+    background-image: linear-gradient(#3a3d40 0%, #181719 100%);
+
+}
+
+.container {
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    background-color: white;
+}
+
+.experiencia,
+.educacion,
+.certificados,
+.publicaciones,
+.referencias {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.item {
+    padding-bottom: 1rem;
+}
+
+main {
+    display: flex;
+    width: 210mm;
+    height: 100%;
+    margin: 5rem auto;
+}
+
+.resumen {
+    width: 100%;
+    background-color: #f0f3f5;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.grado {
+    font-size: .8rem;
+    margin-bottom: 1rem;
+}
+
+.exp-title {
+    color: var(--main-color);
+}
+
+.empresa,
+.ciudad {
+    display: inline-block;
+    font-size: .8em;
+}
+
+.ciudad {
+    font-style: italic;
+    margin-left: .5rem;
+}
+
+.fecha {
+    font-size: .8em;
+    padding-bottom: 1rem;
+}
+
+.actividades {
+    font-size: .8em;
+}
+
+.ed-list {
+    font-size: .9em;
+}
+
+.doi {
+    font-size: .8em;
+}
+
+.doi-link {
+    text-decoration: none;
+    color: black;
+}
+
+.publicaciones {
+    font-weight: inherit;
+    font-size: .9em;
+
+}
+
+.revista {
+    display: inline-block;
+    color: var(--main-color);
+}
+
+.pub-title {
+    font-weight: 400;
+}
+
+.ref-title,
+.numero {
+    font-size: .9rem;
+}
+
+.info {
+    margin: 0 2rem .3rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+
+
+}
+
+.info-title {
+    color: white;
+    font-weight: bold;
+}
+
+.info-text {
+    color: white;
+    font-size: .8em;
+}
+
+.redes-link {
+    color: white;
+    padding: 1rem;
+
+    border-radius: 10px;
+
+}
+
+.redes {
+
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    width: 80%;
+    padding-bottom: 1rem;
+    border-bottom: solid 2px white;
+
+}
+
+.redes-link:hover {
+    color: #3b5998;
+    background-color: white;
+}
+
+.habilidades {
+    border-bottom: white solid 2px;
+    margin: 1rem 2rem;
+    color: white;
+    font-size: .9em;
+    padding-bottom: 2rem;
+}
+
+.hab,
+.lang {
+    margin-bottom: 1rem;
+}
+
+.idiomas {
+
+    margin: 1rem 2rem;
+    color: white;
+    font-size: .9em;
+    padding-bottom: 2rem;
+    border-bottom: white solid 2px;
+}
+
+.download {
+
+    margin: 1rem 2rem;
+    color: white;
+    font-size: .9em;
+    padding-bottom: 2rem;
+
+}
+
+.pdf-btn {
+    text-decoration: none;
+    margin: 0 auto;
+    padding: .5rem;
+    background-color: var(--main-color);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: pointer;
+    flex-direction: row;
+    width: 80%;
+    ;
+
+}
+
+.pdf-btn:hover {
+    background-color: white;
+    color: #F40F02;
+}
+
+
+.fas:hover {
+    color: ;
+}
