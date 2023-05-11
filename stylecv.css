@@ -9,7 +9,7 @@
     --main-color: #17A095;
 }
 
-.info-btn{
+.info-btn {
     color: white;
 }
 
@@ -43,7 +43,7 @@ body {
     /* padding-right: 1rem; */
 }
 
-.contenido{
+.contenido {
     padding-right: 1rem;
 }
 
@@ -147,11 +147,12 @@ main {
 
 
 }
-#check{
+
+#check {
     display: none;
 }
 
-.check-btn{
+.check-btn {
     display: none;
 }
 
@@ -238,7 +239,7 @@ main {
     cursor: pointer;
     flex-direction: row;
     width: 80%;
-    
+
 
 }
 
@@ -250,32 +251,33 @@ main {
 
 
 
-@media (max-width:812px){
+@media (max-width:812px) {
     main {
-        width:100%;
+        width: 100%;
         height: 100%;
-        
-    }    
+
+    }
+
     /* */
 }
 
-@media (max-width:426px){
+@media (max-width:426px) {
     .perfil-img {
         width: 8rem;
         height: 8rem;
 
-    } 
+    }
 
 }
 
-@media (max-width:395px){
-    
+@media (max-width:395px) {
+
     main {
         display: flex;
         flex-direction: column;
     }
 
-    .check-btn{
+    .check-btn {
         display: flex;
         color: white;
         font-size: 1.30rem;
@@ -284,46 +286,48 @@ main {
         width: 45%;
         justify-content: space-between;
         align-items: center;
-        margin-bottom: 1rem;  
+        margin-bottom: 1rem;
         background-color: white;
-border-radius: 10px;      
+        border-radius: 10px;
         color: #17A095;
         padding: .5rem;
-}
-    
-
-    .heading{
-        width:100%;
-       
     }
 
-    .container{
+
+    .heading {
+        width: 100%;
+
+    }
+
+    .container {
         width: 100%;
     }
 
     .pdf-btn {
-        
+
         width: 50%;
-        
-    
+
+
     }
 
 
-    .info-part{
+    .info-part {
         display: none;
-        
+
     }
-    #check:checked ~ .info-part{
+
+    #check:checked~.info-part {
         display: block;
-        
+
     }
+
     .perfil-img {
         width: 10rem;
         height: 10rem;
         margin: 1rem auto;
 
-    } 
+    }
 
-  
+
 
 }
