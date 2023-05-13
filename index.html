@@ -9,7 +9,9 @@
     <link rel="stylesheet" href="stylecv.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>           
+    <script src="/html2pdf.bundle.min.js"></script>
+    <script src="/html2canvas.min.js"></script>
+
 </head>
 
 <body>
@@ -24,7 +26,7 @@
         <script src="/app.js"></script>
 
     </div>
-    <main class="main">
+    <main id="main" class="main">
         <header class="heading">
             <img class="perfil-img" src="/images/perfil.jpg" alt="foto de perfil">
             <input id="check" type="checkbox">
@@ -55,7 +57,7 @@
                 <div class="info">
                     <h5 class="info-title">Nacionalidad
                     </h5>
-                    <p class="info-text">Ecuatoriano</p>
+                    <p class="info-text nacion">Ecuatoriano</p>
                 </div>
                 <div class="redes">
 
@@ -109,20 +111,18 @@
                         </li>
                     </ul>
                 </div>
-                <!-- <div class="download">
+                <div data-html2canvas-ignore class="download">
                     <h3 class="lang">Descargar CV</h3>
-                    <button onclick="test()">Generate PDF</button>
-                    <script src="/script.js"></script>
-                     <button id="crear-pdf-btn" class="pdf-btn"><i
+                    <a href="/documents/Danny_Merino_CV.pdf" target="_blank" id="crear-pdf-btn" class="pdf-btn"><i
                             class="fas fa-file-pdf"></i>PDF
-                        </button>
-                          
-                </div> -->
-                
+                    </a>
+                </div>
+                <!-- <script src="script.js"></script>
+                </script> -->
             </div>
 
         </header>
-        <div class="container">
+        <div id="element-to-print" class="container">
             <section class="resumen">
                 <h1 class="name">Danny Joel Merino Chiliquinga</h1>
                 <h2 class="grado">Ingeniero en Electrónica y Comunicaciones</h2>
@@ -140,7 +140,7 @@
             <div class="contenido">
                 <section class="experiencia">
 
-                    <h3 class="experiencia-text">
+                    <h3 class="expe-title">
                         Experiencia
                     </h3>
 
@@ -215,7 +215,7 @@
                             </li>
                         </div>
 
-                        <div class="item">
+                        <div class="item asist">
                             <li class="exp-list">
                                 <h4 class="exp-title"> Asistente Técnico</h4>
                                 <h5 class="empresa"> FacGar</h5>
@@ -247,11 +247,11 @@
                 </section>
 
                 <section class="educacion">
-                    <h3 class="experiencia-text ">
+                    <h3 class=" ed-title ">
                         Educación
                     </h3>
                     <ul class="educacion-list">
-                        <div class="item">
+                        <div class="editem">
                             <li class="exp-list">
                                 <h4 class="exp-title"> Ingeniero en Electrónica y Comunicaciones
                                 </h4>
@@ -261,7 +261,7 @@
                             </li>
                         </div>
 
-                        <div class="item">
+                        <div class="editem">
                             <li class="exp-list">
                                 <h4 class="exp-title">Bachiller Técnico en Electrónica de Consumo
                                 </h4>
@@ -274,7 +274,7 @@
                 </section>
 
                 <section class="certificados">
-                    <h3 class="experiencia-text ">
+                    <h3 class="cert-title ">
                         Certificados y cursos
                     </h3>
                     <ul class="educacion-list">
@@ -331,7 +331,7 @@
                 </section>
 
                 <section class="publicaciones">
-                    <h3 class="experiencia-text ">
+                    <h3 class="publication-title ">
                         Publicaciones
                     </h3>
                     <ul class="educacion-list">
@@ -370,7 +370,7 @@
                 </section>
 
                 <section class="referencias">
-                    <h3 class="ref-text ">
+                    <h3 class="reference-title ">
                         Referencias
                     </h3>
                     <ul class="educacion-list">

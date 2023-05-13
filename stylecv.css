@@ -41,10 +41,12 @@ body {
     flex-direction: column;
     background-color: white;
 
+
 }
 
 .contenido {
     padding-right: 1rem;
+
 }
 
 .experiencia,
@@ -56,17 +58,27 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+
 }
 
 .item {
     padding-bottom: 1rem;
 }
 
+.ed-title,
+.reference-title,
+.publication-title,
+.cert-title,
+.expe-title {
+    margin-bottom: .4rem;
+}
+
+
 main {
     display: flex;
     width: 210mm;
     height: 100%;
-    margin: 0 auto 5rem auto;
+    margin: 0 auto 0 auto;
 }
 
 .resumen {
@@ -98,7 +110,7 @@ main {
 
 .fecha {
     font-size: .8em;
-    padding-bottom: 1rem;
+    padding-bottom: .95rem;
 }
 
 .actividades {
@@ -115,7 +127,8 @@ main {
 
 }
 
-.curso-title {
+.curso-title,
+.ref-title {
     color: #17A095;
     font-weight: bold;
 }
@@ -231,6 +244,8 @@ main {
     margin-bottom: 1rem;
 }
 
+
+
 .idiomas {
 
     margin: 1rem 2rem;
@@ -277,7 +292,7 @@ main {
 
 .multi-lang {
 
-    width: 200px;
+    width: 180px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -345,12 +360,7 @@ main {
 
     }
 
-    .multi-lang {
-
-        width: 30%;
-
-
-    }
+ 
 }
 
 @media (max-width:395px) {
@@ -360,12 +370,7 @@ main {
         flex-direction: column;
     }
 
-    .multi-lang {
 
-        width: 40%;
-
-
-    }
 
     .check-btn {
         display: flex;
@@ -418,7 +423,6 @@ main {
 
     }
 
-    @media (max-width:567px) {}
 
 
 }
