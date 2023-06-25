@@ -247,7 +247,8 @@ main {
 
 
 
-.idiomas, .referencias {
+.idiomas,
+.referencias {
 
     margin: 1rem 2rem;
     color: white;
@@ -361,7 +362,7 @@ main {
 
     }
 
- 
+
 }
 
 @media (max-width:395px) {
